@@ -14,6 +14,7 @@ Some parts of the code are based on the [code](https://github.com/jgmakin/rbmish
 
 All of the data have been processed and visualized in MatLab, and it is the only requirement for retrieving the data and running the scripts on this repository. To clone this repository, the user needs a working git client installed on his/her Operating System. If this is not available, it is also possible to download the repository as a .zip file by clicking on the Download ZIP button on the top of this page.
 
+**Before using the code, add all subfolders (RBM, FFNN, testing, auxiliary) to MatLab's path (addpath) and download mat files to RBM and FFNN subfolders (see MAT_DOWNLOAD.txt in the subfolders).**
 
 ## Repository Structure
 

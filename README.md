@@ -18,9 +18,9 @@ All of the data have been processed and visualized in MatLab, and it is the only
 ## Repository Structure
 
 The repository is divided into several subfolders:
-- RBM- data and scripts used in "RBM learning." subsection of the paper. The flow is (vis_veloc_train_set_scen1_FFNN.m --> vis_veloc_train_scen1_FFNN.mat --> EFH_vis_velocity_scen1_FFNN_p1.m --> RBM_vis_velocity_scen1_FFNN_p1ep60.mat).
+- RBM- data and scripts used in "RBM learning." subsection of the paper. The flow: vis_veloc_train_set_scen1_FFNN.m --> vis_veloc_train_scen1_FFNN.mat --> EFH_vis_velocity_scen1_FFNN_p1.m --> RBM_vis_velocity_scen1_FFNN_p1ep60.mat.
 
-- FFNN- data and scripts used in "Feedforward network learning." subsection of the paper. The flow is (PPS_train_set_scenario1_FFNN_p2_v2.m --> PPS_train_scenario1_FFNN_p2_v2.mat --> prepare_FFNN_scenario1_FFNN_p2.m --> ready_FFNN_scenario1_FFNN_p2_v2.mat --> prepare_backprop_pred_p2.m --> backprop_learning_scenario1_FFNN_p2_v2.mat --> train_FFNN_1301p2.m --> FFNN_1301p2.mat).
+- FFNN- data and scripts used in "Feedforward network learning." subsection of the paper. The flow: PPS_train_set_scenario1_FFNN_p2_v2.m --> PPS_train_scenario1_FFNN_p2_v2.mat --> prepare_FFNN_scenario1_FFNN_p2.m --> ready_FFNN_scenario1_FFNN_p2_v2.mat --> prepare_backprop_pred_p2.m --> backprop_learning_scenario1_FFNN_p2_v2.mat --> train_FFNN_1301p2.m --> FFNN_1301p2.mat.
 
 - testing- data and scripts used in "Peripersonal space representation testing" and "Analysis of the results" subsections of the paper.
 

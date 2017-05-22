@@ -27,11 +27,11 @@ The repository is divided into several subfolders:
 
 
 ## Notes on parameters
-Excuse some occurence of quasi latex notation (e.g. greek letters, \in,..).
+Please excuse occassional use of quasi-latex notation (e.g. greek letters, \in,..).
 ### RF centers
-The centers of the visual (position) neuron RFs **c**<sub>j</sub><sup>pos</sup>, j \in {1,2,..,289} form a grid of the size 17x17 that is placed in the 2D space [0, 0.8]x[-0.1, 0.7] (see the visual space in Fig. 1 left of the article). Some of the centers (y<0) are placed below the visual field. The neurons with these “non-visible” centers are activated only if some neurons with the “visible” centers are activated. Near the edges, this prevents the distortion of the mean \psi(**r**<sup>pos</sup>)  toward the central part of the visual field.
+The centers of the visual (position) neuron Receptive fields (RFs) **c**<sub>j</sub><sup>pos</sup>, j \in {1,2,..,289} form a grid of size 17x17 that is placed in the 2D space [0, 0.8]x[-0.1, 0.7] (see the visual space in Fig. 1 left of the article). Some of the centers (y<0) are placed below the visual field. The neurons with these “non-visible” centers are activated only if some neurons with the “visible” centers are activated. Near the edges, this prevents the distortion of the mean \psi(**r**<sup>pos</sup>)  toward the central part of the visual field.
 
-The centers of the velocity neuron RFs **c**<sub>j</sub><sup>vel</sup>, j\in{1,2,..,625} form a grid of size 25x25 in the 2D space [-0.012, 0.012]x[-0.012, 0.012]. This space is not a subspace of the visual or the tactile field. 
+The centers of the velocity neuron RFs **c**<sub>j</sub><sup>vel</sup>, j\in{1,2,..,625} form a grid of size 25x25 in the 2D space [-0.012, 0.012]x[-0.012, 0.012]. Note that this is velocity space - not a subspace of the visual or the tactile space / RF. 
 
 The RF centers c<sub>j</sub><sup>tact</sup>, j\in{1,2,..,25} of the tactile neurons form 1D grid of size 25x1 that is placed in the 1D space [0.1, 0.7]x{0}. However the skin itself covers only the subspace [0.2, 0.6]x{0} (see Fig. 1 left). The neurons with RF center outside the skin are activated only if some neurons with the center on the skin are activated. Again, near the skin edges, this prevents the distortion of the mean \psi(**r**<sup>tact</sup>) toward the central part of the skin.
 

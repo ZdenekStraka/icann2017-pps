@@ -27,14 +27,15 @@ The repository is divided into several subfolders:
 
 
 ## Notes on parameters
+Excuse some occurence of quasi latex notation (e.g. greek letters, \in,..).
 ### RF centers
-The centers of the visual (position) neuron RFs $\bold{c}_j^{pos}, j\in\{1,2,..,289\}$ form a grid of the size $17\times17$ that is placed in the 2D space $[0, 0.8]\times[-0.1, 0.7]$ (see the visual space in Fig. 1 left of the article). Some of the centers ($y<0$) are placed below the visual field. The neurons with these “non-visible” centers are activated only if some neurons with the “visible” centers are activated. Near the edges, this prevents the distortion of the mean $\psi(\bold{r}^{pos})$  toward the central part of the visual field.
+The centers of the visual (position) neuron RFs **c**<sub>j</sub><sup>pos</sup>, j \in {1,2,..,289} form a grid of the size 17x17 that is placed in the 2D space [0, 0.8]x[-0.1, 0.7] (see the visual space in Fig. 1 left of the article). Some of the centers (y<0) are placed below the visual field. The neurons with these “non-visible” centers are activated only if some neurons with the “visible” centers are activated. Near the edges, this prevents the distortion of the mean \psi(**r**<sup>pos</sup>)  toward the central part of the visual field.
 
-The centers of the velocity neuron RFs $\bold{c}_j^{vel}, j\in\{1,2,..,625\}$ form a grid of size $25\times25$ in the 2D space $[-0.012, 0.012]\times[-0.012, 0.012]$. This space is not a subspace of the visual or the tactile field. 
+The centers of the velocity neuron RFs **c**<sub>j</sub><sup>vel</sup>, j\in{1,2,..,625} form a grid of size 25x25 in the 2D space [-0.012, 0.012]x[-0.012, 0.012]. This space is not a subspace of the visual or the tactile field. 
 
-The RF centers $c_j^{tact}, j\in\{1,2,..,25\}$ of the tactile neurons form 1D grid of size $25\times1$ that is placed in the 1D space $[0.1, 0.7]\times\{0\}$. However the skin itself covers only the subspace $[0.2, 0.6]\times\{0\}$ (see Fig. 1 left). The neurons with RF center outside the skin are activated only if some neurons with the center on the skin are activated. Again, near the skin edges, this prevents the distortion of the mean $\psi(\bold{r}^{tact})$ toward the central part of the skin.
+The RF centers c<sub>j</sub><sup>tact</sup>, j\in{1,2,..,25} of the tactile neurons form 1D grid of size 25x1 that is placed in the 1D space [0.1, 0.7]x{0}. However the skin itself covers only the subspace [0.2, 0.6]x{0} (see Fig. 1 left). The neurons with RF center outside the skin are activated only if some neurons with the center on the skin are activated. Again, near the skin edges, this prevents the distortion of the mean \psi(**r**<sup>tact</sup>) toward the central part of the skin.
 
 
 ### Covariance matrices
 The covariance matrices used have values:
-$\Sigma_t^{pos}=[0.00125, 0;0, 0.00125]$, $\Sigma_t^{vel}=[1.127*10^{-6}, 0;0, 1.127*10^{-6}]$, $\Sigma_t^{tact}=[0.00125]$
+\Sigma<sub>t</sub><sup>pos</sup>=[0.00125, 0;0, 0.00125], \Sigma<sub>t</sub><sup>vel</sup>=[1.127*10^{-6}, 0;0, 1.127*10^{-6}], \Sigma<sub>t</sub><sup>tact</sup>=[0.00125].
